@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <link rel="stylesheet" href="actionpage.py">
+    <link rel="stylesheet" href="file.java">
+    <link rel="stylesheet" href="database.sql">
+    <link rel="stylesheet" href="actionpage2.py">
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: rgb(195, 142, 244);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+
+    .container{
+        background-color: brown;
+    }
+
+    .product{
+            background-color: lightgray;
+            padding: 20px;
+            margin: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 7px;
+            justify-content: space-between;
+            display: flex;
+    }
+
+    .product_name{
+        font-size: large;
+        color: rgb(72, 63, 63);
+        font-weight: 600;
+    }
+
+    span{
+        color: red;
+        font-size: large;
+    }
+
+    .label{
+        font-size: large;
+        color: rgb(72, 63, 63);
+        font-weight: 600;
+    }
+
+    button{
+        padding: 10px;
+        background-color: greenyellow;
+        color: black;
+        font-weight: 900;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid grey;
+    }
+
+    blockquote{
+            font-weight: bolder;
+            font-size: larger;
+            margin: 0px;
+            padding: 10px;
+            font-style: oblique;
+            color: black;
+    }
+
+    </style>
+</head>
+<body>
+    <form action="actionpage2.py" method="post">
+<div class="container">
+
+<blockquote>Stocks</blockquote>
+
+<div class="product">
+    <div class="product_image"><img src="Photos\google img.jpeg" width="50" height="60" alt="Google" style="border-radius: 10px; margin-right: 5px;"></div>
+    <div class="product_description">
+        <div class="product_name"><label for="product_name">Google</label></div>
+        <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 30 days</span></div>
+        <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 100</span></div>
+        <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 1500</span></div>
+    </div>
+    <div class="rental_button"><button type="submit" class="google">Invest</button></div>
+</div>
+    
+<div class="product">
+    <div class="product_image"><img src="Photos\netflix img.jpeg" width="50" height="60" alt="Netflix" style="border-radius: 10px; margin-right: 5px;"></div>
+    <div class="product_description">
+        <div class="product_name"><label for="product_name">Netflix</label></div>
+        <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 30 days</span></div>
+        <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 120</span></div>
+        <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 2100</span></div>
+    </div>
+    <div class="rental_button"><button type="submit" class="Netflix">Invest</button></div>
+</div>
+                
+<div class="product">
+    <div class="product_image"><img src="Photos\amazon img.jpeg" width="50" height="60" alt="amazon" style="border-radius: 10px; margin-right: 5px;"></div>
+    <div class="product_description">
+        <div class="product_name"><label for="product_name">Amazon</label></div>
+        <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 30 days</span></div>
+        <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 140</span></div>
+        <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 2700</span></div>
+    </div>
+    <div class="rental_button"><button type="submit" class="amazon">Invest</button></div>
+</div>
+</div>
+    </form>
+    
+    
+</body>
+</html>

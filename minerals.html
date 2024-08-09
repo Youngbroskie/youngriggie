@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerals</title>
+    <link rel="stylesheet" href="actionpage.py">
+    <link rel="stylesheet" href="file.java">
+    <link rel="stylesheet" href="database.sql">
+    <link rel="stylesheet" href="actionpage2.py">
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: rgb(152, 71, 228);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+     .container{
+        background-color: brown;
+    }
+
+    .product{
+            background-color: lightgray;
+            padding: 20px;
+            margin: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 7px;
+            justify-content: space-between;
+            display: flex;
+    }
+
+    span{
+        color: red;
+        font-size: small;
+    }
+
+    .label{
+        font-size: large;
+        color: rgb(72, 63, 63);
+        font-weight: 600;
+    }
+
+    button{
+        padding: 10px;
+        background-color: greenyellow;
+        color: black;
+        font-weight: 900;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid grey;
+    }
+
+    blockquote{
+            font-weight: bolder;
+            font-size: larger;
+            margin: 0px;
+            padding: 10px;
+            font-style: oblique;
+            color: black;
+    }
+
+    .product_name{
+        font-size: large;
+        color: rgb(72, 63, 63);
+        font-weight: 600;
+    }
+
+    </style>
+</head>
+<body>
+    <form action="actionpage2.py" method="post">
+        <div class="container">
+        
+        <blockquote>Minerals</blockquote>
+        
+        <div class="product">
+            <div class="product_image"><img src="Photos\copper img.jpeg" width="50" height="60" alt="copper" style="border-radius: 10px; margin-right: 5px;"></div>
+            <div class="product_description">
+                <div class="product_name"><label for="product_name">Copper</label></div>
+                <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 30 days</span></div>
+                <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 375</span></div>
+                <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 7,000</span></div>
+            </div>
+            <div class="rental_button"><button type="submit" class="copper">Invest</button></div>
+        </div>
+            
+        <div class="product">
+            <div class="product_image"><img src="Photos\gold img.jpeg" width="50" height="60" alt="gold" style="border-radius: 10px; margin-right: 5px;"></div>
+            <div class="product_description">
+                <div class="product_name"><label for="product_name">Gold</label></div>
+                <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 25 days</span></div>
+                <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 1030</span></div>
+                <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 17,000</span></div>
+            </div>
+            <div class="rental_button"><button type="submit" class="gold">Invest</button></div>
+        </div>
+                        
+        <div class="product">
+            <div class="product_image"><img src="Photos\oil img.jpeg" width="50" height="60" alt="oil" style="border-radius: 10px; margin-right: 5px;"></div>
+            <div class="product_description">
+                <div class="product_name"><label for="product_name">Oil</label></div>
+                <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 30 days</span></div>
+                <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 1200</span></div>
+                <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 23,000</span></div>
+            </div>
+            <div class="rental_button"><button type="submit" class="Yen">Invest</button></div>
+        </div>
+        </div>
+    </form>
+            
+</body>
+</html>

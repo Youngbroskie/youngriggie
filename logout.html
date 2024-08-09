@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="actionpage2.py">
+    <style>
+        body{
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        }
+
+        .form-container{
+            border-radius: 20px;
+            background-color: black;
+            padding: 5px 5px 20px 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .logout_btn{
+            padding: 10px 30px;
+            background-color: blueviolet;
+            align-items: center;
+            color: white;
+            border-radius: 10px;
+            font-size: larger;
+            box-sizing: border-box;
+            width: 100%;
+            cursor: pointer;
+
+        }
+
+        h{
+            font-weight: bold;
+        }
+
+        .logout_image{
+            margin-bottom: 10px;
+        }
+
+        .logout_btn:hover{
+             background-color: rgb(150, 179, 107);
+             font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="logout_image">
+            <img src="Photos\sign out.png" alt="logout" width="25px" height="30px" style="border-radius: 7px;">
+        </div>
+        <h>
+        Already leaving?
+        </h>
+        <p>Are you sure you want to logout?</p>
+        <div>
+            <button class="logout_btn" type="submit">Logout</button>
+        </div>
+    </div>
+</body>
+</html>

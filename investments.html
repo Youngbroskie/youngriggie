@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Finance Tracker</title>
+  <style>
+    body {
+  font-family: sans-serif;
+}
+
+h, h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+  </style>
+</head>
+<body>
+  <div id="investments">
+    <h>Investments</h>
+    <div class="investments"></div>
+  </div>
+  <script>
+const recordsList = document.querySelector('#records ul');
+const investmentsList = document.querySelector('#investments ul');
+
+// Function to add a new record (example)
+function addRecord(type, amount, date) {
+  const listItem = document.createElement('li');
+  listItem.textContent = ${type}: ${amount} on ${date};
+  recordsList.appendChild(listItem);
+}
+
+// Function to add a new investment (example)
+function addInvestment(product, quantity) {
+  const listItem = document.createElement('li');
+  listItem.textContent = ${product} (Quantity: ${quantity});
+  investmentsList.appendChild(listItem);
+}
+
+// Call the functions to add some initial data (optional)
+addRecord('Deposit', 100, '2024-07-16');
+addRecord('Withdrawal', 50, '2024-07-17');
+addInvestment('Stock (AAPL)', 10);
+addInvestment('Mutual Fund (ABC)', 5);
+  </script>
+</body>
+</html>

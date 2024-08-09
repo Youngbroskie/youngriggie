@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="actionpage.py">
+    <link rel="stylesheet" href="file.java">
+    <link rel="stylesheet" href="database.sql">
+    <link rel="stylesheet" href="actionpage2.py">
+ 
+    <style>
+body{
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+     }
+
+     label{
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: bold;
+     }
+
+ 
+     .imgcontainer{
+        margin-bottom: 40px;
+        margin-top: 20px;
+        background-color: #f3f3f3;
+     }
+
+     .spacing{
+        margin-top: 30px;
+     }
+
+    
+
+     .total_withdrawals{
+        color: red;
+        font-size: large;
+        font-weight: bold;
+     }
+
+    blockquote{
+            font-weight: bolder;
+            font-size: larger;
+            margin: 0px;
+            padding: 10px;
+            font-style: oblique;
+            color: black;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <blockquote>Account</blockquote>
+
+        <div class="imgcontainer">
+            <img src="Photos\account-icon.jpg" width="30px" height="30px" alt="Avatar" class="avatar">
+        </div>
+        <div class="spacing">
+            <label for="uname">Username:</label>
+            <span>{{user.username}}</span>
+        </div>
+        <div class="spacing">
+            <label for="withdrawals">Withrawals:</label>
+            <div class="total-withdrawals">KES <span class="total_withdrawals">0.0</span></div>
+        </div>
+        <div class="spacing">
+
+            <label for="referred_users">Referred Users:</label>
+            <span class="referred_users">0</span>
+        </div>
+
+        <div class="spacing">
+
+            <label for="refferal_code">Refferal Link:</label>
+            <span>{{user.refferal_code}}</span>
+        </div>
+
+        <div class="spacing">
+            <div  class="logout">
+        
+            <a href="logout.html">Log Out</a>
+        </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

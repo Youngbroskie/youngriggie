@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Investments</title>
+    <link rel="stylesheet" href="actionpage.py">
+    <link rel="stylesheet" href="file.java">
+    <link rel="stylesheet" href="database.sql">
+    <link rel="stylesheet" href="actionpage2.py">
+    <style>
+         body{
+        font-family: Arial, sans-serif;
+        background-color: rgb(152, 71, 228);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        
+    }
+
+    .container{
+        background-color: brown;
+    }
+
+     
+    .product{
+            background-color: lightgray;
+            padding: 20px;
+            margin: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 7px;
+            justify-content: space-between;
+            display: flex;
+    }
+
+    span{
+        color: red;
+        font-size: small;
+    }
+
+    .label{
+        font-size: large;
+        color: rgb(72, 63, 63);
+        font-weight: 600;
+    }
+
+    button{
+        padding: 10px;
+        background-color: greenyellow;
+        color: black;
+        font-weight: 900;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid grey;
+    }
+
+    blockquote{
+            font-weight: bolder;
+            font-size: larger;
+            margin: 0px;
+            padding: 10px;
+            font-style: oblique;
+            color: black;
+    }
+
+    .product_name{
+        font-size: large;
+        color: rgb(72, 63, 63);
+        font-weight: 600;
+    }
+
+    </style>
+</head>
+<body>
+    <form action="actionpage2.py" method="post">
+        <div class="container">
+        
+        <blockquote>Cash Investments</blockquote>
+        
+        <div class="product">
+            <div class="product_image"><img src="Photos\mm fund img.jpeg" width="50" height="60" alt="moneymarket" style="border-radius: 10px; margin-right: 5px;"></div>
+            <div class="product_description">
+                <div class="product_name"><label for="product_name">Money Market</label></div>
+                <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 30 days</span></div>
+                <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 55</span></div>
+                <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 900</span></div>
+            </div>
+            <div class="rental_button"><button type="submit" class="moneymarket">Invest</button></div>
+        </div>
+                        
+        <div class="product">
+            <div class="product_image"><img src="Photos\real estate img.jpeg" width="50" height="60" alt="realestate" style="border-radius: 10px; margin-right: 5px;"></div>
+            <div class="product_description">
+                <div class="product_name"><label for="product_name">Real Estate</label></div>
+                <div class="rental_period"><label for="rental_period">Cycle:</label> <span class="rental_period"> 30 days</span></div>
+                <div class="daily_income"><label for="daily_income">Daily Income:</label><span class="daily_income"> KES 60</span></div>
+                <div class="rental_price"><label for="rental_price">Investment:</label><span class="rental_price"> KES 1200</span></div>
+            </div>
+            <div class="rental_button"><button type="submit" class="Yen">Invest</button></div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>

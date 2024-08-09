@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DEPOSIT</title>
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    
+      
+     }
+
+     .container{
+        color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        background-color: black;
+        
+     }
+
+     section{
+        background-color: rgb(51, 35, 35);
+        padding: 40px;
+        border-radius: 0.5rem;
+        display: block;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+     label{
+        display: block;
+        margin-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        margin-top: 15px;
+     }
+
+     input[type="text"],
+     input[type="number"]{
+
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #251f1f;
+        border-radius: 5px;
+        background-color: black;
+        color: whitesmoke;
+     }
+     
+    button{
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: greenyellow;
+        color: black;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    h3{
+        color: rgb(138, 129, 129);
+
+    }
+
+
+    .amount{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .payment_method{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .payment_amount{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <h3>Deposit</h3>
+    <input type="checkbox" checked>PAYBILL M-PESA</input>
+
+    <label for="name">First and Last Name(ONLY) of the sender:</label>
+    <input type="text" required placeholder="e.g Ethan Carlos">
+    
+    <label for="phone">Phone:</label>
+    <input value="+254" type="number" required>
+
+    <label for="Amount">Enter Amount:</label>
+    <input type="number" placeholder="23000" required>
+
+   <h>Review Details:</h> 
+<section>
+   <div class="amount">Amount<div class="amount_in_USD">0.0 USD</div></div>
+   <div class="payment_method">Payment Method<div class="payment-method">PAYBILL</div> </div>
+
+</section>
+Go to paybill and enter business number<strong> 247247</strong><br>
+Enter Account Number <strong>0112461783</strong><br>
+
+<label for="Amount">Enter Transaction Id:</label>
+<input type="text" placeholder="eg. QRT8A5XUD7" required>
+
+<button type="submit">Proceed to Payment</button>
+
+</div>
+</body>
+</html>

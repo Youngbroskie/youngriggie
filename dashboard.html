@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="actionpage.py">
+    <link rel="stylesheet" href="file.java">
+    <link rel="stylesheet" href="database.sql">
+    <link rel="stylesheet" href="actionpage2.py">
+    <link rel="stylesheet" href="action_page.php">
+    <style>
+        body{
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+            color: white;
+            
+        }
+
+     
+        blockquote{
+            font-weight: bolder;
+            font-size: larger;
+            margin: 0px;
+            padding: 10px;
+            font-style: oblique;
+            color: black;
+
+        }
+
+        .menu-bar{
+            margin-inline-start: auto;
+           cursor: pointer;
+
+
+        }
+
+        button{
+            background-color: greenyellow;
+            color: black;
+            border: 1px;
+            border-radius: 10px;
+            padding: 15px;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+
+        .navs{
+           display: flex;
+           justify-content: space-between;
+           background-color: wheat;
+
+        }
+
+      
+        .deposit{
+            border: black solid 1px;
+            border-radius: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .withdraw{
+            border: black solid 1px;
+            border-radius: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        .transactions{
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            
+        }
+
+        .navigations{
+            display: flex;
+            background-color: wheat;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 0px;
+    
+        }
+
+        .arrow{
+            font-size: larger;
+           
+        }
+        .navbar{
+            
+            background-color: lightgray;
+            font: optional;
+            color: black;
+            padding-top: 20px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        .menu-bar{
+           align-items: end;
+           justify-content: end;
+           display: flex;
+
+        }
+
+        .about{
+            padding: 4px 8px;
+            border-radius: 5rem;
+            font-size: larger;
+            margin-right: 5px;
+            background-color: crimson;
+            color: black;
+            cursor: pointer;
+        }
+
+        .records{
+            padding: 4px 8px;
+            border-radius: 5rem;
+            font-size: larger;
+            margin-right: 5px;
+            background-color: green;
+            color: black;
+            cursor: pointer;
+        }
+        .category-bar{
+            background-color: greenyellow;
+            color: black;
+            border: 2px;
+            border-radius: 10px;
+            justify-items: center;
+            align-items: center;
+            padding: 20px;
+            
+        }
+
+        .nav-container{
+            background-color: gray;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .navbar{
+            background-color: lightgray;
+            padding: 20px;
+            margin: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 7px;
+            
+        }
+
+        
+     label{
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: bold;
+        margin-bottom: 10px;
+     }
+
+     .wallet_balance{
+        color: red;
+        font-weight: bold;
+        font-size: larger;
+     }
+
+     
+
+     .balance-container{
+        padding: 20px;
+     }
+
+     .total-balance{
+        margin-bottom: 40px;
+     }
+
+     .incometoday{
+        margin-top: 20px;
+        margin-bottom: 20px;
+     }
+     
+    .category{
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+        text-align: center;
+     }
+
+
+     .intro{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: xx-large;
+        font-weight: bolder;
+        display: flex;
+        position: fixed;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+     }
+
+     .abt{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        margin-bottom: 5px;
+
+     }
+
+     cite span{
+        color: red;
+        margin-left: -10px;
+     }
+
+     .nav_option{
+        display: inline-block;
+        color: white;
+
+     }
+
+     a{
+        text-decoration: none;
+        color: black;
+     }
+
+
+
+</style>
+</head>
+<body>
+    <div class="abt">
+        
+<div class="intro">
+      <cite>K<a href="https://wa.me/"><span class="2nd">C</a></span>M</cite>
+</div>
+<div class="menu-bar">
+    <div class="about">
+        ?
+    </div>
+    <a href="records.html">
+        <div class="records">
+            #
+        </div>
+    </a>
+</div>
+    </div>
+
+<div class="balance-container">
+    <div class="total-balance">
+    <label for="account-balance">Wallet Balance</label>
+    <div class="balance">KES <span class="wallet_balance"> 0.0</span></div>
+    </div>
+    <hr>
+
+    <div class="incometoday">
+    <label for="today's-income">Today Income</label>
+    <div class="today's-income">KES<span class="todays_income"> 0.0</span></div>
+    </div>
+</div>
+
+
+<div class="transactions">
+
+
+<div class="deposit">
+    <a href="deposit.html">
+    <button type="submit">
+    Deposit
+    </button>
+    </a>
+</div>
+
+<div class="withdraw">
+    <a href="withdraw.html">
+<button type="submit">
+        Withdraw
+        </button>
+    </a>
+</div>
+</div>
+
+<div class="category-bar">
+    <div class="category"><span><</span><span>Choose Category</span><span>></span></div>
+</div>
+
+<div class="nav-container">
+
+    <blockquote>Categories</blockquote>
+
+<div class="navbar">
+<a href="cash.html">
+    <div class="category-image"><img src="Photos\cash.png" width="30px" height="30px" alt="cash" style="border-radius: 15px;"></div>
+    <div class="cash-investments">Cash Investments</div>
+</a>
+</div>
+
+
+<div class="navbar">
+<a href="stocks.html">
+    <div class="category-image"><img src="Photos\products-icon.jpg" width="30px" height="30px" alt="stocks" style="border-radius: 15px;"></div>
+    <div class="stocks">Stock Investments</div>
+</a>
+</div>
+
+
+<div class="navbar">
+<a href="minerals.html">
+    <div class="category-image"><img src="Photos\dollar-icon.jpg" width="30px" height="30px" alt="minerals" style="border-radius: 15px;"></div>
+    <div class="cash-investments">Minerals Investments</div>
+</a>
+</div>
+
+<div class="navbar">
+    <a href="fx-market.html">
+        <div class="category-image"><img src="Photos\market-icon.jpg" width="30px" height="30px" alt="fx-market" style="border-radius: 15px;"></div>
+        <div class="forex-market">Forex Market</div>
+    </a>
+    </div>
+</div>
+<div class="navs">
+<div class="nav_option"><a href="index.html">
+    <img src="Photos\home-icon.jpg" width="30px" height="30px" alt="dashboard" style="border-radius: 20px;">
+    <span>Home</span></a>
+</div>
+<div class="nav_option"><a href="investments.html">
+    <img src="Photos\gold img.jpeg" width="30px" height="30px" alt="myinvestments" style="border-radius: 20px;">
+    <span>Investments</span></a>
+</div>
+<div class="nav_option"><a href="account.html">
+    <img src="Photos\invite.jpg" width="30px" height="30px" alt="account" style="border-radius: 20px;">
+    <span>Account</span></a>
+</div>
+
+<div class="nav_option"> <a href="giftcode.html">
+    <img src="Photos\depo.png" width="30px" height="30px" alt="gift" style="border-radius: 20px;">
+    <span>Gift</span></a>
+</div>
+</div>
+</body>
+</html>
